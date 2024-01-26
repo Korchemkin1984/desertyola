@@ -1,0 +1,2552 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Bergamasco";
+    src: url(./fonts/ofont.ru_Bergamasco.ttf);
+}
+
+.body {
+    background-color: #EFE4FA;
+    max-width: 1920px;
+    width: 100%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-image: url(./images/stripes.png);
+}
+
+.header {
+    height: 203px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(./images/curtain_top.png);
+}
+
+.header__container {
+    padding: 26px 88px 117px 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo_image {
+    width: 127px;
+    height: 127px;
+}
+
+.navigation {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    max-width: 678px;
+    width: 100%;
+    padding-top: 33px;
+}
+
+.contacts__item {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: none;
+}
+
+.contacts__item_text {
+    padding-left: 6px;
+    color: #5E3B80;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+}
+
+.contacts__item_text:hover {
+    color: #370566;
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+.navigation__item  {
+    color: #5E3B80;
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+}
+
+.navigation__item:hover {
+    color: #370566;
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+.main {
+    margin: 67px 92px 135px 80px;
+}
+
+.main__wrapper_top {
+    padding: 50px 437px 50px 50px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: #DCC3F3;
+}
+
+.top {
+    padding-left: 150px;
+    padding-top: 45px;
+    padding-bottom: 88px;
+    max-width: 1262px;
+    flex-shrink: 0; 
+    border-radius: 34px;
+    background: rgba(255, 252, 252, 0.26);
+}
+
+.top__title {
+    max-width: 683px;
+    width: 100%;
+    color: #5E3B80;
+    font: 600 120px/130px "Bergamasco", sans-serif;
+}
+
+.top__image {
+    position: absolute;
+    left: 858px;
+    top: 140px;
+}
+
+.top__text {
+    max-width: 603px;
+    width: 100%;
+    margin-top: 8px;
+    color: #5E3B80;
+    font-family: "Lora", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+}
+
+.text-button {
+    width: 177px;
+    height: 31px;
+    color: #FFEEED;
+    font-family: "Lora", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+}
+
+.sign-up-button {
+    margin-top: 54px;
+    width: 287px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 200px;
+    background: #A866E7;
+    padding: 13.5px 48.5px;
+    color: white;
+}
+
+.sign-up-button:hover {
+    background-color: #6919b4;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+.main__wrapper_products {
+    margin-top: 68px;
+    padding: 134px 125px 140px 165px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFFCFC;
+}
+
+.products__title {
+    border-top: 13px solid rgba(253, 218, 225, 0.78);
+    max-width: max-content;
+    padding: 16px 34px 44px;
+}
+
+.title_text {
+    color: #5E3B80;
+    font-family: "Bergamasco", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+}
+
+.products__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+} 
+
+.product__weight {
+    padding-top: 20px;
+}
+
+.product__price {
+    padding-top: 5px;
+}
+
+.product__title {
+    color: #5E3B80;
+    font-family: "Lora", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+}
+
+.product__text {
+    color: #5E3B80;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.main__wrapper_advantages{
+    margin-top: 58px;
+    padding: 119px 159px 104px;
+    border-radius: 100px;
+    flex-shrink: 0;
+    background: #E9DFF2;
+}
+
+.advantages__title {
+    border-top: 13px solid #FFFCFC;
+    max-width: max-content;
+    padding: 27px 39px 30px;
+}
+
+.advantages {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 108px;
+}
+
+.advantage__content{
+    padding-top: 60px;
+    max-width: 210px;
+    width: 100%;
+}
+
+.advantage__content___text {
+    color: #5E3B80;
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.main__wrapper_hits {
+    margin-top: 55px;
+    padding: 119px 126px 100px 139px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFFCFC;
+}
+
+.hits__title {
+    border-top: 13px solid rgba(253, 218, 225, 0.78);
+    max-width: max-content;
+    padding: 27px 39px 123px;
+}
+
+.hit {
+    padding-top: 15px;
+    gap: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.hit__content_description {
+    padding-top: 26px;
+    width: 95%;
+}
+
+.hit__content_structure {
+    padding-top: 25px;
+}
+
+.hit__title {
+    color: #5E3B80;
+    font: 600 36px/25px "Lora", sans-serif;
+    line-height: normal;
+}
+
+.hit__content_description_text {
+    color: #5E3B80;
+    font: 400 20px/25px "Lora", sans-serif;
+    letter-spacing: 0.6px;
+}
+
+.hit__content_structure_text {
+    color: #5E3B80;
+    font: 400 14px/18px "Lora", sans-serif;
+    letter-spacing: 0.42px;
+}
+
+.main__wrapper_reviews {
+    margin-top: 55px;
+    padding: 119px 72px 80px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #E9DFF2;
+}
+
+.reviews__title {
+    border-top: 13px solid #FFFCFC;
+    max-width: max-content;
+    padding: 12px 36px 40px;
+}
+
+.reviews__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reviews__block {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    height: 260px;
+    max-width: 600px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFFCFC;
+}
+
+.reviews__block_image {
+    float: right;
+}
+
+.reviews__content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.block_review_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 310px;
+    width: 94%;
+    transition: transform 0.5s ease-in-out;
+    gap: 148px;
+}
+
+.block_review {
+    gap: 10px;
+    display: flex;
+    object-fit: cover;
+}  
+
+.block_review__image {
+    width: 55px;
+    height: 58px;
+}
+
+.review__content_text {
+    color: #5E3B80;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.reviews_right_block {
+    max-width: 606px;
+    width: 100%;
+}
+
+.right_block_review__content {
+    gap: 150px;
+    width: 100%;
+}
+
+.main__wrapper_certificates {
+    margin-top: 55px;
+    padding: 112px 171px 171px 164px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFFCFC;
+}
+
+.certificates__title {
+    border-top: 13px solid rgba(253, 218, 225, 0.78);
+    max-width: max-content;
+    padding: 28px 39px 39px;
+}
+
+.certificates__images {
+    display: flex;
+    gap: 49px;
+    justify-content: flex-end;
+}
+
+.certificates__images_picture_second {
+    order: -1;
+}
+
+.certificates__images_picture_first {
+    order: -1;
+}
+
+.footer {
+    max-height: 575px;
+    height: 100%;
+    position: relative;
+    background: rgba(214, 198, 228, 0.39);
+}
+
+.lower_block {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 278px;
+    padding-right: 101px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.lower_block_down {
+    float: right;
+}
+
+.lower_block_image {
+    position: absolute;
+    bottom: 0;    
+}
+
+.form__input {
+    border: none;
+    padding-left: 30px;
+    width: 350px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFFCFC; 
+    color: #AA8CC7;
+    font-family: "Lora", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.66px;
+}
+
+.form-description__form {
+    float: right;
+    margin-top: 100px;
+    margin-bottom: 41px;
+}
+
+.form__input_next {
+    margin-left: 40px;
+}
+
+.form__submit-button {
+    margin-bottom: 72px;
+    border: none;
+    width: 803px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: #EC85A3; 
+    color: #FFEEED;
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.66px; 
+}
+
+.form__submit-button:hover {
+    background-color: #d7436d;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+.footer_content {
+    padding: 122px 94px 47px 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-down {
+    position: relative;   
+    background-position-y: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(./images/curtain_bottom.png);
+}
+
+.footer_content_item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer_content_item_right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_content_item_text {
+    padding-left: 6px;
+    color: #FFF;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+}
+
+.footer_content_item_text:hover {
+    color: #7425be;
+    transform: scale(1.02);
+    transition: transform 500ms;
+}
+
+.footer_content_item:hover {
+    transform: scale(1.02);
+    transition: transform 500ms;
+} 
+
+@media screen and (max-width: 1890px) {
+    .reviews__left_button{
+        display: none;
+    }
+
+    .reviews__right_button {
+        display: none;
+    }
+
+    .reviews__container {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .reviews__block {
+        width: 100%;
+        height: 675px;
+        gap: 25px;
+    }
+
+    .block_review_container {
+        padding-top: 60px;
+        width: auto;
+        gap: 55px;
+    }
+
+    .main__wrapper {
+        padding-top: 50px;
+        padding-left: 80px;
+    }
+
+    .advantages {
+        max-width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top__image {
+       left: 700px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .lower_block {
+        padding-left: 75px;
+    }
+}
+
+@media screen and (max-width: 1840px) {
+    .hit {
+        gap: 150px;
+     }
+}
+
+@media screen and (max-width: 1740px) {
+    .navigation {
+        padding-top: 23px;
+    }
+
+    .header__logo_image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main__wrapper_top {
+        padding-right: 0;
+    }
+
+    .top {
+        width: 80%;
+        background: #DCC3F3;
+    }
+
+    .reviews__right_button {
+        display: none;
+    }
+
+    .reviews__left_button {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 1690px) {
+    .top {
+        padding-left: 80px;
+    }
+
+    .top__image{
+        top: 180px;
+        width: 900px;
+        height: auto;
+    }
+
+    .hit {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .top__image {
+        left: 570px;
+    }
+
+     .reviews__container {
+        padding-top: 40px;
+        align-items: flex-start;
+        flex-direction: column;
+    } 
+
+    .reviews__block {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .navigation {
+        padding-top: 15px;
+    }
+
+    .hit__image_second {
+        width: 450px;
+        height: auto;
+    }
+
+    .hit__image_first {
+        width: 600px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 500px;
+        height: auto;
+    }
+
+    .lower_block_image {
+        width: 500px;
+        height: auto;
+    }
+    
+    .form-description__form {
+        margin-top: 50px;
+    }
+
+    .advantages {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .main {
+        margin: 47px 72px 105px 60px;
+    }
+
+    .form__input {
+        width: 300px;
+    }
+
+    .form__submit-button {
+        width: 703px;
+    }
+
+    .footer_content {
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .form__submit-button {
+        margin-bottom: 30px;
+    }
+
+    .header__logo_image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .top {
+        padding-left: 15px;
+    }
+
+    .top__image {
+        left: 500px;
+    }
+
+    .hit__image_second {
+        width: 450px;
+        height: auto;
+    }
+
+    .hit__image_first {
+        width: 450px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 450px;
+        height: auto;
+    }
+
+    .main__wrapper_certificates {
+        padding-right: 80px;
+    }
+
+    .certificates__images {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .advantages {
+        gap: 40px;
+        align-items:start;
+        flex-direction: column;
+    }
+      
+    .advantage {
+        max-width: 750px;
+        gap: 45px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;       
+    }
+
+    .advantage__picture {
+        max-width: 160px;
+        height: auto;
+    }
+
+    .advantage__content {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20px;
+        max-width: 300px;
+    }
+
+    .lower_block {
+        padding-right: 50px;
+    }   
+}
+
+@media screen and (max-width: 1430px) {
+    .main__wrapper_top {
+        padding-top: 15px;
+    }
+    
+    .top {
+        padding-bottom: 100px;
+        padding-left: 45px;
+        padding-top: 0;
+    }
+
+    .top__text {
+        margin-top: 35px;
+    }
+
+    .top__image {
+        top: 280px;
+        width: 690px;
+    }
+
+    .top__title {
+        max-width: 950px;
+        width: 100%;
+        font: 600 100px/110px "Bergamasco", sans-serif;
+    }
+
+    .top__text {
+       font-family: "Lora", sans-serif;
+       max-width: 450px;
+       width: 100%;
+       font-size: 32px;
+       font-weight: 400;
+       letter-spacing: 0.72px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .lower_block_image {
+        width: 450px;
+    }
+
+    .form__submit-button {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .top {
+        max-width: 1110px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .top__title {
+        max-width: 950px;
+    }  
+    
+    .form__input {
+        width: 250px;
+        height: 70px;
+    }
+
+    .form__submit-button {
+        width: 605px;
+        height: 70px;
+    }
+}
+  
+@media screen and (max-width: 1270px) {
+    .main {
+       margin-top: 17px;
+       margin-left: 50px;
+       margin-right: 75px;
+    }
+
+    .header__logo_image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .top__image {
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .top__image {
+        left: 430px;
+    }   
+}  
+
+@media screen and (max-width: 1215px) {
+    .hit__image_first {
+        width: 400px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 400px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 400px;
+        height: auto;
+    }
+
+    .sign-up-button {
+        padding: 0;
+    }
+
+    .lower_block_image {
+        width: 370px;
+    }
+
+    .main__wrapper_certificates {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .top__title {
+        font: 600 95px/100px "Bergamasco", sans-serif;
+    }
+
+    .main__wrapper {
+        border-radius: 44px;
+    }
+
+    .header__logo_image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__container {
+        padding-top: 10px;
+    }
+
+    .main {
+        margin: 0 40px 60px 40px;
+    }
+        
+    .main__wrapper {
+        padding-left: 40px;
+        padding-right: 40px;    
+    }
+
+    .top__image {
+        width: 600px;
+        height: auto;
+    }
+
+    .form__submit-button {
+        margin-left: 20px;
+    }
+
+    .hits__title {
+        padding-bottom: 57px;
+    }
+
+    .hit__image_first {
+        width: 380px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 350px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 380px;
+        height: auto;
+    }
+
+    .lower_block_image {
+        width: 320px;
+    }
+
+    .lower_block {
+        padding-left: 35px;
+        padding-right: 40px;
+    } 
+
+    .form__input {
+        width: 230px;
+        height: 65px;
+    }
+
+    .form__submit-button {
+        width: 570px;
+        height: 65px;
+    }
+}
+  
+@media screen and (max-width: 1024px) {
+    .contacts {
+        display: none;
+    } 
+    
+    .header__container {
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+    
+    .header_image {
+        padding-left: 60px;
+        padding-top: 50px;
+    }
+
+    .navigation {
+        padding: 0;
+    }
+
+    .navigation__item {
+        text-align: center;
+        width: 212px;
+        height: 35px;
+        border-radius: 25px;
+        background: white;
+    }
+
+    .contacts__item {
+        display: flex;
+        padding-right: 88px;
+        padding-top: 0;
+    }
+
+    .contacts__item_text {
+        padding-left: 6px;
+        color: #5E3B80;
+        font-family: "Lora", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        text-decoration: none;
+    }
+    
+    .contacts__item_text:hover {
+        color: #370566;
+        transform: scale(1.02);
+        transition: transform 500ms;
+    }
+
+    .title_text {
+        font-family: "Bergamasco", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+    }
+
+    .top__image {
+        width: 570px;
+        height: auto;
+    }
+
+    .hit__image_first {
+        width: 330px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 300px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 330px;
+        height: auto;
+    }
+    
+    .footer_contact {
+        display: none;
+    }
+
+    .footer_content {
+        justify-content: space-around;
+    }
+
+    .lower_block_image {
+        width: 270px;
+        height: auto;
+    }
+
+    .footer_content_item_image{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .top__title {
+        font: 600 83px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        width: 510px;
+        height: auto;
+    }
+
+    .main__wrapper_top {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .product {
+        max-width: 250px;
+    }
+
+    .product__picture {
+        max-width: 220px;
+        height: auto;
+    } 
+}
+
+@media screen and (max-width: 960px) {
+    .main__wrapper_advantages {
+        padding-bottom: 40px;
+    }
+
+    .main__wrapper_products {
+        padding-right: 45px;
+    }
+
+    .navigation__item {
+        padding-top: 4px;
+    }
+
+    .top__text {
+        font-family: "Lora", sans-serif;
+        max-width: 350px;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    .sign-up-button {
+        width: 250px;
+        height: 60px;
+    }
+
+    .top__image {
+        left: 350px;
+        width: 500px;
+        height: auto;
+    }
+
+   .hit__title {
+        font: 600 25px/25px "Lora", sans-serif;
+        line-height: normal;
+    }
+
+   .title_text {
+        font-family: "Bergamasco", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+    }
+
+    .advantage {
+        width: 450px;
+        height: auto;
+    }
+
+    .advantage__picture {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .advantage__content{
+        max-width: 280px;
+    }
+
+    .lower_block_image {
+        width: 250px;
+        height: auto;
+    }
+
+    .lower_block {
+        padding-left: 35px;
+        padding-right: 40px;
+    } 
+
+    .form__input {
+        border-radius: 0;
+        width: 350px;
+        height: 60px;
+    }
+
+    .form__submit-button {
+        width: 550px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .hit {
+        gap: 0;
+    }
+
+    .top__title {
+        font: 600 81px/100px "Bergamasco", sans-serif;
+    }
+
+    .form__input {
+        width: 320px;
+        height: 55px;
+    }
+    
+    .form__submit-button {
+        width: 490px;
+        height: 55px;
+    }
+
+    .lower_block_image {
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .header {
+        height: 150px;
+    }
+
+    .contacts__item {
+        margin-top: -40px;
+        padding-left: 100px;
+    }
+
+    .navigation__item {
+        padding: 0;
+        width: 170px;
+        height: 25px;
+    }
+
+    .top__title {
+        font: 600 75px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        top: 200px;
+        left: 310px;
+        width: 450px;
+        height: auto;
+    }
+
+    .top__text {
+        font-family: "Lora", sans-serif;
+        max-width: 290px;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main__wrapper {
+       padding-left: 25px;
+       padding-right: 25px;
+    }
+
+    .main {
+        margin: 0px 25px 60px;
+    }
+
+    .advantage__picture {
+        width: 100px;
+        height: auto;
+    }
+
+    .product {
+        max-width: 230px;
+    }
+
+    .product__picture {
+        max-width: 210px;
+        height: auto;
+    } 
+    
+    .block_review__content {
+        width: 440px;
+    }
+
+    .reviews__block {
+        padding: 10px 10px 10px 20px;
+        width: 600px;
+        height: 720px;   
+    }
+
+    .block_review__image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews__block_image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .block_review__picture {
+        width: 100px;
+        height: auto;
+    }
+
+    .form__input {
+        width: 285px;
+        height: 55px;
+    }
+    
+    .form__submit-button {
+        width: 465px;
+        height: 55px;
+    }
+
+    .footer_content {
+        padding-bottom: 10px;
+    }
+
+    .hit__image_first {
+        width: 300px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 270px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 300px;
+        height: auto;
+    }
+
+    .text-button {
+        width: 100px;
+        height: 10px;
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: 0.72px;
+    }
+    
+    .sign-up-button {
+        margin-top: 20px;
+        width: 207px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .main__wrapper {
+        margin-top: 50px;
+        padding-top: 25px;
+    }
+
+    .header_image {
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .contacts__item {
+        margin-top: -30px;
+    }
+
+    .navigation__item {
+        text-align: center;
+        width: 140px;
+        height: 25px;
+        border-radius: 20px;
+        background: white;
+    }
+
+    .top__title {
+        font: 600 65px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        top: 170px;
+        left: 250px;
+        width: 430px;
+        height: auto;
+    }
+
+    .top__text {
+        margin: 0;
+        font-family: "Lora", sans-serif;
+        max-width: 290px;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    .title_text {
+        padding: 0;
+        padding-bottom: 20px;
+        font-family: "Bergamasco", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+   }
+
+   .products__title {
+        border-top: 8px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .hits__title {
+        border-top: 8px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .advantages__title {
+        border-top: 8px solid #FFFCFC;
+        max-width: max-content;
+    }
+
+    .reviews__title {
+        border-top: 8px solid #FFFCFC;
+        max-width: max-content;
+    }
+
+    .certificates__title {
+        border-top: 8px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .main__wrapper_top {
+        padding-left: 55px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .product {
+        max-width: 210px;
+    }
+
+    .product__picture {
+        max-width: 190px;
+        height: auto;
+    } 
+
+    .product__title {
+        font-family: "Lora", sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.75px;
+    }
+
+    .form__input {
+        font-size: 19px;
+        width: 235px;
+        height: 50px;
+    }
+      
+    .form__submit-button {
+        font-size: 19px;
+        width: 390px;
+        height: 50px;
+    }
+
+    .lower_block_image {
+        width: 200px;
+        height: auto;
+    }
+
+    .footer_content_item_image {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_content_item_text {
+        padding-left: 4px;
+        color: #FFF;
+        font-family: "Lora", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        text-decoration: none;
+    }
+
+    .main__wrapper_certificates {
+        padding-bottom: 30px;
+    }
+
+    .certificates__images {
+        gap: 30px;
+    }
+
+    .certificates__images_picture_first {
+        width: 290px;
+        height: 190px;
+    }
+
+    .certificates__images_picture_second {
+        width: auto;
+        height: 190px;
+    }
+
+    .certificates__images_picture_third {
+        width: 290px;
+        height: 190px;
+    }
+
+    .block_review_container {
+        padding-top: 40px;
+        max-width: 450px;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .block_review {
+        padding-left: 15px;
+    }
+
+    .block_review__image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .reviews__block_image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .review__content_text {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+    }    
+
+    .reviews__block {
+        max-width: 510px;
+        width: 100%;
+        height: 550px;   
+        padding: 10px 10px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__wrapper_top {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        height: 120px;
+    }
+
+    .top__title {
+        font: 600 53px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        top: 140px;
+        left: 220px;
+        width: 380px;
+        height: auto;
+    }
+
+    .top {
+        padding-bottom: 50px;
+    }
+
+    .main__wrapper_hits {
+        padding-bottom: 50px;
+    }
+
+    .hit__image_first {
+        width: 250px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 220px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 250px;
+        height: auto;
+    }
+
+    .hit__content_description_text {
+        font: 400 17px/20px "Lora", sans-serif;
+        padding-top: 15px;
+    }
+
+    .hit__title {
+        font: 600 20px/25px "Lora", sans-serif;
+    }
+
+    .sign-up-button {
+        width: 190px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .form__input {
+        font-size: 17px;
+        width: 200px;
+        height: 45px;
+    }
+      
+    .form__submit-button {
+        font-size: 17px;
+        width: 335px;
+        height: 45px;
+    }
+
+    .lower_block_image {
+        width: 180px;
+        height: auto;
+    }
+
+    .footer_content {
+        padding-top: 92px;
+    }
+
+    .review__content_text {
+        font-size: 15px;
+        letter-spacing: 0.45px;
+    } 
+
+    .block_review {
+        padding-left: 0;
+    }
+
+    .reviews__block {
+        max-width: 400px;
+        height: 535px;   
+        padding: 10px 10px 10px 20px;
+    }
+
+    .block_review__content {
+        width: 85%;
+    }
+
+    .main__wrapper_reviews {
+        padding-bottom: 50px;
+    }
+
+    .reviews__container {
+        padding-top: 0;
+        gap: 30px;
+    }
+
+    .block_review_container {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main__wrapper {
+        border-radius: 20px;      
+    }
+
+    .header {
+        height: 95px;
+    }
+
+    .navigation__item {
+        font-size: 15px;
+        width: 120px;
+        height: 20px;
+    }
+
+    .header_image {
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+
+    .header__container {
+        padding-top: 15px;
+        padding-right: 50px;
+    }
+
+    .top__image {
+        top: 120px;
+        left: 215px;
+        width: 370px;
+        height: auto;
+    }
+
+    .footer_content_item_image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacts__item_text {
+        padding-left: 3px;
+        font-size: 15px;
+    }
+
+    .product {
+        max-width: 180px;  
+        width: 100%;     
+        height: auto;   
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .title_text {
+        font-size: 33px;
+    }
+
+    .contacts_item_text {
+        width: 120px;
+        font-size: 12px;
+        letter-spacing: 0.29px;
+    }
+
+    .contacts__item {
+        padding-right: 55px;
+    }
+
+    .header__logo_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .top__title {
+        font: 600 47px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        top: 140px;
+        left: 220px;
+        width: 300px;
+        height: auto;
+    }
+
+    .top__text {
+        max-width: 240px;
+        font-size: 18px;
+    }
+
+    .product {
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .product__title {
+        font-size: 18px;
+    }
+
+    .product__text {
+        font-size: 15px;
+    }
+
+    .product__picture {
+        max-width: 140px;
+        height: auto;
+    }
+
+    .main__wrapper_products {
+        padding-bottom: 50px;
+    }
+
+    .advantage__picture {
+        width: 70px;
+        height: auto;
+    }
+
+    .advantage__content___text {
+        font-size: 17px;
+    }
+
+    .advantage {
+        width: 360px;
+        height: 100px;
+    }
+
+    .hit__image_first {
+        width: 220px;
+        height: auto;
+    }
+        
+    .hit__image_second {
+        width: 180px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 220px;
+        height: auto;
+    }
+
+    .hit__content_description_text {
+        font: 400 15px/20px "Lora", sans-serif;
+        padding-top: 10px;
+    }
+    
+    .hit__content_structure_text {
+        font-family: 400 11px/16px "Lora", sans-serif;
+        padding-top: 10px;
+    }
+
+    .certificates__images_picture_first {
+        width: 225px;
+        height: 160px;
+    }
+
+    .certificates__images_picture_second {
+        width: 102px;
+        height: auto;
+    }
+
+    .certificates__images_picture_third {
+        width: 225px;
+        height: 160px;
+    }
+
+    .form__input {
+        padding-left: 10px;
+        font-size: 16px;
+        width: 170px;
+        height: 40px;
+    }
+      
+    .form__submit-button {
+        font-size: 16px;
+        width: 295px;
+        height: 40px;
+    }
+
+    .lower_block_image {
+        width: 140px;
+        height: auto;
+    }
+
+    .footer_content {
+        padding-top: 60px;
+    }   
+}
+
+@media screen and (max-width: 550px) {
+     .main {
+        margin: 0 20px 40px;
+     }
+
+    .hit__image_second {
+        width: 170px;
+        height: auto;
+        margin: 0;
+    }
+
+    .hit__image_first {
+        width: 190px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 190px;
+        height: auto;
+    }
+
+    .top__title {
+        font: 600 42px/100px "Bergamasco", sans-serif;
+    }
+
+    .top__image {
+        top: 130px;
+        left: 200px;
+        width: 280px;
+        height: auto;
+    }
+
+    .top__text {
+        max-width: 220px;
+        font-size: 16px;
+    }
+
+    .main__wrapper {
+        margin-top: 30px;
+    }
+
+    .main__wrapper_top {
+        margin: 0;
+    }
+
+    .navigation__item {
+        font-size: 13px;
+        width: 100px;
+        height: 17px;
+    }
+
+    .header__logo_image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer_content_item_image {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__container {
+        padding-right: 40px;
+    }
+
+    .contacts__item {
+        margin-top: -20px;
+    }  
+
+    .review__content_text {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    } 
+
+    .reviews__block {
+        max-width: 350px;
+        height: 510px;   
+        padding: 10px 10px 20px 10px;
+    }
+
+    .block_review__content {
+        width: 80%;
+    }
+
+    .form__input {
+        font-size: 14px;
+        width: 160px;
+        height: 40px;
+    }
+      
+    .form__submit-button {
+        font-size: 14px;
+        width: 260px;
+        height: 40px;
+    }
+
+    .lower_block_image {
+        width: 130px;
+        height: auto;
+    }
+
+    .footer_content {
+        padding-top: 37px;
+    }
+
+    .footer_content_item_text {
+        font-size: 12px;
+    }
+
+    .contacts__item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .hit {
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .hit__image_first {
+        position: absolute;
+        top: 20px;
+    }
+
+    .hit_top_milk {
+        padding-left: 190px;
+    }
+
+    .hit__image_second {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+
+    .hit__image_third {
+        position: absolute;
+        top: 20px;
+    }
+
+    .hit_top_bento {
+        padding-left: 190px;
+    }
+
+    .hit_top_snickers {
+        padding-right: 170px;
+    }
+
+    .hit_down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title_text {
+        font-size: 25px;
+    }
+
+    .product__title {
+        font-size: 15px;
+    }
+
+    .product__text {
+        font-size: 13px;
+    }
+
+    .product__picture {
+        max-width: 130px;
+        width: auto;
+        height: auto;
+    }
+
+    .product {
+        max-width: 145px;
+        width: 100%;
+        height: auto;
+    }
+
+    .header__logo_image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .top__image {
+        top: 95px;
+        left: 200px;
+        width: 240px;
+        height: auto;
+    }
+
+    .top__title {
+        font: 600 40px/100px "Bergamasco", sans-serif;
+        line-height: 55px; 
+    }
+
+    .sign-up-button {
+        width: 170px;
+        height: 30px;
+    }
+
+    .form-description__form {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .lower_block_image {
+        width: 110px;
+        height: auto;
+    }
+
+    .form__input {
+        padding-left: 8px;
+        font-size: 14px;
+        width: 140px;
+        height: 30px;
+    }
+      
+    .form__submit-button {
+        font-size: 14px;
+        width: 240px;
+        height: 30px;
+    }
+
+    .lower_block {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer_content_item_text {
+        font-size: 10px;
+    }
+
+    .header__container {
+        padding-top: 10px;
+    }
+
+    .header_image {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .footer_content_item_image {
+        width: 13px;
+        height: 13px;
+    }
+
+    .contacts_item_text {
+        width: 100px;
+        height: 10px;
+        font-size: 12px;
+        letter-spacing: 0.29px;
+    }
+
+    .contacts__item {
+        margin-top: -10px;
+    }   
+}
+
+@media screen and (max-width: 470px) {
+    .top__title {
+        font: 600 35px/100px "Bergamasco", sans-serif;
+        line-height: 50px;
+    }
+
+   .text-button {
+        width: 100px;
+        font-size: 12px;
+    }
+    
+    .sign-up-button {
+        margin-top: 15px;
+        width: 124px;
+        height: 23px;
+    }
+
+    .top__image {
+        left: 175px;
+        width: 230px;
+        height: auto;
+    }
+
+     .advantage__picture {
+        width: 65px;
+        height: auto;
+    }
+
+    .advantage__content___text {
+        font-size: 14px;
+    }
+
+    .advantage {
+        width: 300px;
+        height: 80px;
+    }
+
+    .hit__title {
+        font: 600 16px/18px "Lora", sans-serif;
+    }
+
+    .hit__content_description_text {
+        font: 400 12px/15px "Lora", sans-serif;
+        letter-spacing: 0.36px;
+        padding-top: 10px;
+    }
+    
+    .hit__content_structure_text {
+        font: 400 11px/18px "Lora", sans-serif;
+        letter-spacing: 0.33px;
+        padding-top: 19px;
+    }
+
+    .hit__image_second {
+        width: 160px;
+        height: auto;
+    }
+
+    .hit__image_first {
+        width: 170px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 130px;
+        height: auto;
+    }
+
+    .products__title {
+        padding-bottom: 0;
+    }
+
+    .hits__title {
+        padding-bottom: 0;
+    }
+    .hit {
+        margin-top: 40px;
+    }
+
+    .hit_top_bento {
+        padding-left: 150px;
+    }
+
+    .hit_top_snickers {
+        padding-right: 160px;
+    }
+
+    .hit_top_milk {
+        padding-left: 170px;
+    }
+
+    .reviews__block_image {
+        width: 32px;
+        height: auto;
+    }
+
+    .block_review__image {
+        width: 32px;
+        height: 32px;
+    }
+
+    .block_review__picture {
+        width: 76px;
+        height: auto;
+    }
+
+    .reviews__title {
+        border-top: 4px solid #FFFCFC;
+        max-width: max-content;
+    }
+
+    .review__content_text {
+        font-family: "Lora", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.36px;
+    }
+
+    .reviews__block {
+        max-width: 324px;
+        width: 100%;
+        height: 420px;
+        padding: 9px 11px;
+    }
+
+    .block_review_container {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .block_review__content {
+        padding-right: 18px;
+        padding-left: 0;
+        width: 95%;
+    }
+
+    .right_block_review__content{
+          padding-left: 25px;
+    }
+
+    .reviews__container {
+        margin-left: -12px;
+    }
+
+    .products__title {
+        border-top: 4px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .certificates__title {
+        border-top: 4px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .advantages__title {
+        border-top: 3px solid #FFFCFC;
+        max-width: max-content;
+    }
+
+    .hits__title {
+        border-top: 4px solid rgba(253, 218, 225, 0.78);
+        max-width: max-content;
+    }
+
+    .certificates__images {
+        gap: 10px;
+    }    
+
+    .form__input {
+        font-size: 14px;
+        width: 150px;     
+    }
+      
+    .form__submit-button {
+        font-size: 14px;
+        width: 240px;       
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contacts_item_text {
+        width: 75px;
+        font-size: 8px;
+        letter-spacing: 0.24px;
+    }
+
+    .footer_content_item_image {
+        width: 12px;
+        height: auto;
+    }
+
+    .navigation__item {
+        font-size: 10px;
+        width: 87px;
+        height: 13px;
+    }
+
+    .product__title {
+        font-size: 12px;
+    }
+
+    .product__text {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+    }
+
+    .product {
+        max-width: 130px;
+        width: 100%;
+        height: auto;
+    }
+
+    .product__picture {
+        width: 120px;
+        height: auto;
+    }
+
+    .products__list {
+        gap: 10px;
+    }
+
+    .footer_content_item_text {
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        width: 106px;
+    }
+
+    .form__input_next {
+        margin-left: 10px;
+    }
+
+    .form__input {
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        width: 195px;
+        height: 32px;
+        width: 45%;
+    }
+
+    .form__submit-button {
+        font-size: 12px;
+        width: 230px;
+        height: 32px;
+    }
+
+    .certificates__images_picture_first {
+        order: 0;
+        width: 154px;
+        height: 120px;
+    }
+
+    .certificates__images_picture_second {
+        order: 0;
+        width: 100px;
+        height: auto;
+    }
+
+    .certificates__images_picture_third {
+        width: 154px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 430px) { 
+    .lower_block_image {
+        width: 100px;
+        height: auto;
+    }  
+
+    .certificates__images {
+        position: relative;
+    }
+
+    .main__wrapper_certificates {
+        height: auto;
+    }
+    
+    .certificates__images_picture_second {
+       position: absolute;
+       left: 170px;
+       top: 40px;     
+    }
+} 
+
+@media screen and (max-width: 415px) {        
+    .main {
+        margin: 0 18px 30px;
+    }
+    
+    .top__title {
+        width: 340px;       
+    }
+
+    .top__text {
+        padding-top: 16px;
+        padding-bottom: 12px;
+        width: 155px;
+        height: 60px;
+        font-size: 12px;
+        letter-spacing: 0.36px;       
+    }
+
+    .sign-up-button {
+        padding: 7px 16px;
+        width: 124px;
+        height: 18px;
+    }
+
+    .text-button {
+        width: 91px;
+        height: 15px;
+        letter-spacing: 0.36px;
+    }   
+
+    .top__image {
+        left: 165px;
+        top: 105px;
+        width: 225px;
+        height: auto;
+    }
+
+    .title_text {
+        font-size: 18px;
+        padding-right: 9px;
+        padding-top: 4px;
+        padding-left: 9px;
+        letter-spacing: 0.54px;
+    }       
+
+    .main__wrapper_advantages{
+        margin-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .advantage__picture {
+        width: 60px;
+        height: auto;
+    }
+
+    .advantage__content___text {
+        padding-top: 20px;
+        width: 195px;
+        text-align: start;
+        height: 30px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        letter-spacing: 0.36px;
+    }
+
+    .advantages {
+        gap: 0;
+    }
+      
+    .advantage {
+        align-items: center;
+    }
+  
+    .main__wrapper_hits {
+        margin-top: 26px;
+        padding: 18px 0 40px 25px;
+    }
+
+    .hit__title {
+        font-size: 12px;
+        line-height: 15px; 
+        letter-spacing: 0.36px;
+    }
+
+    .hit__content_description_text {
+        font-size: 12px;
+        line-height: 15px; 
+        letter-spacing: 0.36px;
+    }
+
+    .hit__content_structure_text {
+        font-size: 10px;
+        line-height: 15px; 
+        letter-spacing: 0.3px;
+    }
+   
+    .hit__image_first {
+        width: 155px;
+        height: auto;
+    }
+
+    .hit__top_milk {
+        padding-left: 160px;
+    }
+
+    .hit__image_second {
+        width: 145px;
+        height: auto;
+    }
+
+    .hit__image_third {
+        width: 150px;
+        height: auto;
+    }
+
+    .hit_top_bento {
+        padding-left: 160px;
+    }
+
+    .hit_top_snickers {
+        padding-right: 150px;
+    }
+
+    .main__wrapper_certificates {
+        height: 340px;
+    }
+
+    .certificates__images {
+        padding-left: 16px;
+    }
+
+    .certificates__images_picture_second {
+        left: 186px;
+    }    
+}
+
+@media screen and (max-width: 375px) {
+    .top__title {
+        width: 330px;
+    }
+
+    .top__image {
+        left: 135px;
+    }
+
+    .main__wrapper_hits {
+        padding-left: 20px;
+    }
+
+    .lower_block_image {
+        width: 82px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .lower_block_image {
+        width: 80px;
+        height: auto;
+    }
+
+    .main__wrapper_top {
+        padding-left: 15px;
+    }
+
+    .top__image {
+        left: 140px;
+    }
+
+    .navigation__item {
+        width: 80px;
+    }
+}
+
